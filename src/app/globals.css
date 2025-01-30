@@ -1,21 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Syne+Mono&family=Syne:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap');
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  .myFlex {
+    @apply flex items-center justify-center
+  }
+
+  .middle {
+    @apply top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2
   }
 }
 
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+.no-scrollbar {
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and newer versions of Edge */
+}
+
+.syne-mono {
+  font-family: "Syne Mono", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.syne-mono-bold {
+  font-family: "Syne Mono", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.syne {
+  font-family: "Syne", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.gabarito {
+  font-family: "Gabarito", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Satoshi Light";
+  src: url("/fonts/Satoshi/Satoshi-Light.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Satoshi Regular";
+  src: url("/fonts/Satoshi/Satoshi-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Satoshi Medium";
+  src: url("/fonts/Satoshi/Satoshi-Medium.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Satoshi Bold";
+  src: url("/fonts/Satoshi/Satoshi-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Satoshi Black";
+  src: url("/fonts/Satoshi/Satoshi-Black.woff2") format("woff2");
+}
+
+
+@font-face {
+  font-family: "Bespoke Light";
+  src: url("/fonts/Bespoke/BespokeStencil-Light.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Bespoke Regular";
+  src: url("/fonts/Bespoke/BespokeStencil-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Bespoke Medium";
+  src: url("/fonts/Bespoke/BespokeStencil-Medium.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Bespoke Bold";
+  src: url("/fonts/Bespoke/BespokeStencil-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Bespoke Extrabold";
+  src: url("/fonts/Bespoke/BespokeStencil-Extrabold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "PP Regular";
+  src: url("/fonts/Neue/PP-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "PP Medium";
+  src: url("/fonts/Neue/PP-Medium.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Hoves Demi";
+  src: url("/fonts/Hoves/Hoves-Demi.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Basebloom";
+  src: url("/fonts/Basebloom/BaseBloom.woff2") format("woff2");
 }
