@@ -70,7 +70,7 @@ const Breakdown = ({item, index}:{item: Item, index: number}) => {
         onClick={() => setOpen(!open)}
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
-        className={`w-full min-h-[45px] max-h-[45px] flex items-center relative px-4 rounded-lg`}
+        className={`w-full min-h-[45px] max-h-[45px] flex items-center relative px-4 rounded-lg cursor-pointer`}
       >
         <p className={`w-[23.5%] text-[10.5px] tracking-[0.05em] font-HovesDemi leading-none uppercase flex items-center justify-start z-10 transition-color duration-300 text-[#78777790] dark:text-[#787777]`}>
           0{index + 1}  

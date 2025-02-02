@@ -37,6 +37,8 @@ const Logo = () => {
       {/* <div id="HEADER_LOGO" className="w-fit h-fit myFlex">
         <RiCopyrightLine className="text-[#FFFEF3] dark:text-[#111111] w-[27px] h-[27px]"/>
       </div> */}
+      <img src="https://cdn.brandfetch.io/id9IJJnIpA/theme/light/symbol.svg?c=1dxbfHSJFAPEGdCLU4o5B" alt="_" className="w-[50%] h-auto"/>
+
     </div>
   );
 }

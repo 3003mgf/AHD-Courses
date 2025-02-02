@@ -6,9 +6,9 @@ import gsap from "gsap";
 import { useEffect, useRef, useState } from "react";
 import MenuButton from "./Menu/MenuButton";
 import Menu from "./Menu/Menu";
-import { RiCopyrightLine } from "react-icons/ri";
 import Logo from "./Logo/Logo";
 import Music from "./Music/Music";
+import { useSearchParams } from 'next/navigation'
 
 const Header = () => {
 
@@ -17,17 +17,16 @@ const Header = () => {
   const ref = useRef<HTMLHeadElement | null>(null);
   const open = useHeaderMenu(state => state.isOpen);
 
-
   const [scrollDirection, setScrollDirection] = useState<string | null>(null);
   const [lastScrollPosition, setLastScrollPosition] = useState<number>(0);
 
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollPosition = window.scrollY;
-
-      if (currentScrollPosition > lastScrollPosition && !open) {
+      
+      if(currentScrollPosition > lastScrollPosition && !open){
         setScrollDirection("down");
-      } else if (currentScrollPosition < lastScrollPosition) {
+      }else if (currentScrollPosition < lastScrollPosition){
         setScrollDirection("up");
       }
 
@@ -59,10 +58,9 @@ const Header = () => {
   }, [scrollDirection, ref]);
 
 
-  // bg-[#faf9f6f7]
 
   return ( 
-    <header ref={ref} className="fixed top-0 left-0 w-full h-[90px] flex items-center justify-between px-[60px] bg-transparent z-[100]">
+    <header id="HEADER" ref={ref} className="fixed top-0 left-0 w-full h-[90px] flex items-center justify-between px-[60px] bg-transparent z-[100]">
       {/* Logo */}
       <Logo/>
 

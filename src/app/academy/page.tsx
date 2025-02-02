@@ -7,11 +7,14 @@ import Labs from "@/components/Labs/Labs";
 import { data } from "@/components/Main/Featured/Featured.data";
 import FeaturedCard from "@/components/Main/Featured/FeaturedCard";
 import { useDarkMode } from "@/utils/zustand/zustand";
+import { AnimatePresence } from "framer-motion";
+import gsap from "gsap";
+import { useEffect, useState } from "react";
 
 const Academy = () => {
 
   const isDarkMode = useDarkMode(state => state.isDarkMode);
-  
+   
 
   return ( 
     <div className="w-full min-h-screen flex items-start justify-start flex-col">
@@ -19,7 +22,7 @@ const Academy = () => {
       <div className="w-full h-[60vh] pb-[77px] flex items-end justify-start px-[60px] bg-[#F2F0EA99] dark:bg-[#141414] relative">
         <div className="w-full flex items-start justify-start">
           <div className="w-[23.5%]">
-            <p className="text-[10px] tracking-[0.05em] text-[#FFA300] font-SatoshiBold leading-none mt-[15px]">
+            <p className="text-[10px] tracking-[0.05em] text-[#F2B347] font-SatoshiBold leading-none mt-[15px]">
               ACADEMY •
             </p>
             <p className="text-[10px] tracking-[0.05em] text-[#d7d4cd] dark:text-[#5A5A5A99] font-SatoshiBold leading-none mt-3.5 px-0.5 uppercase">
@@ -34,10 +37,18 @@ const Academy = () => {
             <div className="flex items-center mt-6 px-[4px]">
               {/* Pictures */}
               <div className="flex">
-                <div className="w-[36px] h-[36px] rounded-full bg-[#1D1D1D50] dark:bg-[#21212199]"></div>
-                <div className="w-[36px] h-[36px] rounded-full bg-[#1D1D1D50] dark:bg-[#21212199] -ml-[6%]"></div>
-                <div className="w-[36px] h-[36px] rounded-full bg-[#1D1D1D50] dark:bg-[#21212199] -ml-[6%]"></div>
-                <div className="w-[36px] h-[36px] rounded-full bg-[#1D1D1D50] dark:bg-[#21212199] -ml-[6%]"></div>
+                <div className="w-[36px] h-[36px] rounded-full bg-[#e5e2da80] dark:bg-[#25252599] ring-[2px] ring-[#F5F3EF] overflow-clip relative">
+                  {/* <img src="https://framerusercontent.com/images/oqnWhZ7MZuoMdPnLGWQbPbnO4mU.jpg" alt="_" className="absolute inset-0 w-full h-full object-cover"/> */}
+                </div>
+                <div className="w-[36px] h-[36px] rounded-full bg-[#e5e2da80] dark:bg-[#25252599] ring-[2px] ring-[#F5F3EF] overflow-clip -ml-[6%] relative">
+                  {/* <img src="https://framerusercontent.com/images/n5AZB9aS8FtjPnBeOTyFeMPZh4.jpg?scale-down-to=1024" alt="_" className="absolute inset-0 w-full h-full object-cover"/> */}
+                </div>
+                <div className="w-[36px] h-[36px] rounded-full bg-[#e5e2da80] dark:bg-[#25252599] ring-[2px] ring-[#F5F3EF] overflow-clip -ml-[6%] relative">
+                  {/* <img src="https://framerusercontent.com/images/hNYpONdTHUdVFWucfc8ROOWVcs.jpg?scale-down-to=512" alt="_" className="absolute inset-0 w-full h-full object-cover"/> */}
+                </div>
+                <div className="w-[36px] h-[36px] rounded-full bg-[#e5e2da80] dark:bg-[#25252599] ring-[2px] ring-[#F5F3EF] overflow-clip -ml-[6%] relative">
+                  {/* <img src="https://framerusercontent.com/images/5Py4y25huRpFsE41JxVkT0QQPg.jpg" alt="_" className="absolute inset-0 w-full h-full object-cover"/> */}
+                </div>
               </div>
 
               {/* Trusted By */}
@@ -50,18 +61,15 @@ const Academy = () => {
                   <img src="https://framerusercontent.com/images/kmZ93HmpNj9XDkKfjmeuYEkHg.svg" alt="_" className="w-[11px] h-[11px]"/>
                   {/* <p className="text-[#212121] text-[10px] font-HovesDemi leading-none">5.0</p> */}
                 </div>
-                <p className="text-[9.25px] tracking-[0.05em] text-[#78777780] dark:text-[#414141] font-SatoshiBold leading-none uppercase">
-                  ~ Joined by <span className="text-[#414141] dark:text-[#E9E6DE]">23K People.</span>
+                <p className="text-[9.25px] tracking-[0.05em] text-[#78777790] dark:text-[#414141] font-SatoshiBold leading-none uppercase px-[1px]">
+                  Trusted by <span className="text-[#414141] dark:text-[#E9E6DE]">23K People.</span>
                 </p>
               </div>
             </div>
 
             {/* AI Button */}
             <div className="absolute top-[15px] right-0 flex items-center gap-x-5 z-10">
-           
               <AIButton displayText={true}/>
-
-              {/* <AIChat/> */}
             </div>
           </div>
         </div>

@@ -1,5 +1,6 @@
 import { data } from "@/components/Main/Alumni/Alumni.data";
 import AlumniCard from "./AlumniCard";
+import AnimatedText from "@/components/AnimatedText/AnimatedText";
 
 const Alumni = () => {
   return ( 
@@ -7,13 +8,13 @@ const Alumni = () => {
       {/* Text */}
       <div className="w-full flex">
         <div className="w-[70%] flex items-start justify-start flex-col">
-          <p className="text-[10px] tracking-[0.05em] text-[#F2B347] font-SatoshiBold leading-none">ALUMNI •</p>
-          <p className="text-[250px] text-[#414141] dark:text-[#E9E6DE] font-SatoshiBlack leading-none overflow-visible relative">
+          <AnimatedText id="ALUMNI_TAG" text="ALUMNI •" custom="text-[10px] tracking-[0.05em] text-[#F2B347] font-SatoshiBold" type={4}/>
+          {/* <p className="text-[10px] tracking-[0.05em] text-[#F2B347] font-SatoshiBold leading-none">ALUMNI •</p> */}
+          {/* <p className="text-[250px] text-[#414141] dark:text-[#E9E6DE] font-SatoshiBlack leading-none overflow-visible relative">
             33K
-            {/* <span className="absolute bottom-[29px] -right-[25%] text-[10px] text-[#d7d4cd] dark:text-[#313131] tracking-[0.05em] font-SatoshiBold leading-none uppercase">
-              -{"\u00A0"} WORLDWIDE
-            </span> */}
-          </p>
+          </p> */}
+
+          <AnimatedText id='ALUMNI_1' text="33K" custom="text-[250px] text-[#414141] dark:text-[#E9E6DE] font-SatoshiBlack leading-none" type={2} animated={{threshold: 0.25, duration: 0.7}}/>
         </div>
         <div className="w-[30%] flex items-end justify-end">
           <button className="w-[100px] h-[36px] bg-[#F5F3ED] dark:bg-[#171717] rounded-full group hover:bg-[#F2B347] hover:dark:bg-[#F2B347] transition-colors duration-300 mb-7">
@@ -21,13 +22,6 @@ const Alumni = () => {
               JOIN
             </p>
           </button>
-          {/* <p className="text-[10px] tracking-[0.05em] text-[#d7d4cd] font-SatoshiBold leading-none uppercase mb-7">
-            • WORLDWIDE •
-          </p> */}
-          {/* <div className="flex items-start justify-start flex-col">
-            <p className="text-[10px] tracking-[0.05em] text-[#d7d4cd] font-SatoshiBold leading-none">~ EXPERTS</p>
-            <p className="text-[250px] text-[#414141] font-SatoshiBlack leading-none overflow-hidden">20</p>
-          </div> */}
         </div>
       </div>
 

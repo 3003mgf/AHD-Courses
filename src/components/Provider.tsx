@@ -5,8 +5,10 @@ import { ReactLenis } from '@studio-freight/react-lenis'
 import Spotify from "./Spotify/Spotify";
 import Embed from "./Spotify/Embed";
 import { useEffect } from "react";
-import { useDarkMode } from "@/utils/zustand/zustand";
+import { useAI, useDarkMode } from "@/utils/zustand/zustand";
 import { usePathname } from "next/navigation";
+import { AnimatePresence } from "framer-motion";
+import AIChat from "./AI/AIChat";
 
 const Provider = ({children}:{children: React.ReactNode}) => {
 
@@ -39,12 +41,35 @@ const Provider = ({children}:{children: React.ReactNode}) => {
           </>
         )}
 
-        {/* <Embed/> */}
-
         {children}
+
+        <OverFuckingLays/>
       </div>
     </ReactLenis>
    );
 }
  
 export default Provider;
+
+
+
+
+
+const OverFuckingLays = () =>{
+
+  const isOpen = useAI(state => state.isOpen); // AI
+
+  return (
+    <>
+       <AnimatePresence mode="wait">
+        {isOpen && (
+          <AIChat/>
+        )}
+
+      </AnimatePresence>
+      
+      {/* Blocks */}
+      <div id="AI_BLOCKS_CONTAINER" className="fixed inset-0 w-full h-screen flex flex-wrap items-start justify-start overflow-hidden pointer-events-none z-[1000]"></div>
+    </>
+  );
+};

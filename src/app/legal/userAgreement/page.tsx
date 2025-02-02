@@ -57,11 +57,11 @@ const UserAgreement = () => {
         </div>
 
         {/* Shape */}
-        <div className="absolute top-[36.5%] -translate-y-[36.5%] right-0 w-[25%] h-[60%] -rotate-[180deg]">
+        {/* <div className="absolute top-[36.5%] -translate-y-[36.5%] right-0 w-[25%] h-[60%] -rotate-[180deg]">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 950" className="w-full h-auto fill-[#e9e6de6b] dark:fill-[#181818] overflow-visible">
             <path d="M272 248C553 9 765-77 590 117c170-78 505-25-100 280 360-35 259 118 14 135 729 89 275 169-28 106 202 133-126 59-258 0-843 1448-414-1727-144-438 57-306 389-608 198 48z"></path>
           </svg>
-        </div>
+        </div> */}
       </div>
 
 
@@ -92,16 +92,16 @@ const UserAgreement = () => {
           >
             <p className="text-[10px] text-[#F2B347] tracking-[0.05em] font-SatoshiBold leading-none uppercase">User A •</p>
             
-            <p className="text-[19px] text-[#fffef3f9] dark:text-[#E9E6DE] font-SatoshiBlack leading-[1.2] mt-3">You'll Find This.</p>
+            <p className="text-[19px] text-[#414141] dark:text-[#E9E6DE] font-SatoshiBlack leading-[1.2] mt-3">You'll Find This.</p>
 
-            <button className="w-full h-[36px] rounded-lg bg-[#FFFEF3] dark:bg-[#E9E6DE] mt-7">
+            <button className="w-full h-[36px] rounded-lg bg-[#414141] dark:bg-[#E9E6DE] mt-7">
 
             </button>
 
             <div className="w-full mt-8 flex flex-col gap-y-1.5">
               {printTable.map((item, index) =>(
-                <div key={`User_TABLE_SECTION_${index}`} className="px-3.5 py-3.5 rounded-lg hover:bg-[#21212150] hover:dark:bg-[#41414175] group">
-                  <p className={`text-[10px] tracking-[0.05em] font-SatoshiBold leading-none uppercase ${index === 0 ? "text-[#FFFEF3] dark:text-[#E9E6DE]" : "text-[#FFFEF399] dark:text-[#E9E6DE99]"}`}>{item.section}{index === 0 && `${"\u00A0"}${"\u00A0"}•`}</p>
+                <div key={`User_TABLE_SECTION_${index}`} className="px-3.5 py-3.5 rounded-lg hover:bg-[#F2F0E9] hover:dark:bg-[#41414175] group cursor-pointer">
+                  <p className={`text-[10px] tracking-[0.05em] font-SatoshiBold leading-none uppercase ${index === 0 ? "text-[#787777] dark:text-[#E9E6DE]" : "text-[#78777799] dark:text-[#E9E6DE99]"}`}>{item.section}{index === 0 && `${"\u00A0"}${"\u00A0"}•`}</p>
                 </div>
               ))}
             </div>

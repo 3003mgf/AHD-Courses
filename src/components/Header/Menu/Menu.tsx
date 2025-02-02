@@ -27,6 +27,9 @@ const Menu = () => {
         <p className="text-[10px] tracking-[0.05em] text-[#FFFEF399] dark:text-[#E9E6DE99] font-SatoshiBold leading-none px-3.5 py-3.5 rounded-lg hover:bg-[#21212150] hover:dark:bg-[#41414175]">
           ABOUT
         </p>
+        <p className="text-[10px] tracking-[0.05em] text-[#FFFEF399] dark:text-[#E9E6DE99] font-SatoshiBold leading-none px-3.5 py-3.5 rounded-lg hover:bg-[#21212150] hover:dark:bg-[#41414175]">
+          AGENCY
+        </p>
         
         {/* <div className="w-full mx-auto h-[0.5px] my-2"></div> */}
 

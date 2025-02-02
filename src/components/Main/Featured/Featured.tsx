@@ -1,27 +1,28 @@
 import { data } from "@/components/Main/Featured/Featured.data";
 import FeaturedCard from "./FeaturedCard";
 import { IoBookmark } from "react-icons/io5";
+import AnimatedText from "@/components/AnimatedText/AnimatedText";
 
 const Featured = () => {
   return ( 
     <div className="w-full pt-[80px] px-[120px]">
       <div className="w-full flex flex-col pb-[50px] px-0.5">
 
-        <p className="text-[10px] tracking-[0.05em] text-[#F1B347] font-SatoshiBold leading-none">
+        {/* <p className="text-[10px] tracking-[0.05em] text-[#F1B347] font-SatoshiBold leading-none">
            ACADEMY •
-        </p>
+        </p> */}
+        <AnimatedText id="FEATURED_TAG" text="ACADEMY •" custom="text-[10px] tracking-[0.05em] text-[#F2B347] font-SatoshiBold" type={4}/>
         
         <div className="w-full flex items-end justify-between mt-5">
           <div className="flex flex-col">
-            <p className="text-[#414141] dark:text-[#E9E6DE] text-[40px] font-SatoshiBlack leading-[1.2] pb-[5px] overflow-hidden">
+            {/* <p className="text-[#414141] dark:text-[#E9E6DE] text-[40px] font-SatoshiBlack leading-[1.2] pb-[5px] overflow-hidden">
               Start Learning
               <br />
               — Online Today.
-            </p>
-
-            {/* <p className="text-[10px] text-[#21212150] font-SatoshiBold tracking-[0.05em] mt-6 leading-none uppercase">
-              The Youth Culture.
             </p> */}
+
+            <AnimatedText id='FEATURED_1' text="Start Learning" custom="text-[#414141] dark:text-[#E9E6DE] text-[40px] font-SatoshiBlack leading-[1.2]" type={1}/>
+            <AnimatedText id='FEATURED_1' text="— Online Today." custom="text-[#414141] dark:text-[#E9E6DE] text-[40px] font-SatoshiBlack leading-[1.2] pb-[5px]" type={1}/>
           </div>
 
           <div className="w-[50%] flex items-center justify-start gap-x-[200px]">
