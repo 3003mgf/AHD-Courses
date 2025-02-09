@@ -29,18 +29,18 @@ const Footer = () => {
         </div>
 
         <div className="flex gap-x-5">
-          <p className="text-[10px] text-[#d7d4cd] dark:text-[#5A5A5A99] hover:text-[#FFA300] hover:dark:text-[#FFA300] font-SatoshiBold tracking-[0.05em] uppercase transition-colors duration-100 cursor-pointer">
-            User
-          </p>
-
+        
           <p className="text-[10px] text-[#d7d4cd] dark:text-[#5A5A5A99] hover:text-[#FFA300] hover:dark:text-[#FFA300] font-SatoshiBold tracking-[0.05em] uppercase transition-colors duration-100 cursor-pointer">
             Print
           </p>
 
           <p className="text-[10px] text-[#d7d4cd] dark:text-[#5A5A5A99] hover:text-[#FFA300] hover:dark:text-[#FFA300] font-SatoshiBold tracking-[0.05em] uppercase transition-colors duration-100 cursor-pointer">
-            Privacy Policy
+            Privacy
           </p>
-
+          
+          <p className="text-[10px] text-[#d7d4cd] dark:text-[#5A5A5A99] hover:text-[#FFA300] hover:dark:text-[#FFA300] font-SatoshiBold tracking-[0.05em] uppercase transition-colors duration-100 cursor-pointer">
+            Press
+          </p>
 
           <p className="text-[10px] text-[#FFA300] font-SatoshiBold tracking-[0.05em] uppercase">
             —

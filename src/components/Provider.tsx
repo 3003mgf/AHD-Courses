@@ -9,6 +9,7 @@ import { useAI, useDarkMode } from "@/utils/zustand/zustand";
 import { usePathname } from "next/navigation";
 import { AnimatePresence } from "framer-motion";
 import AIChat from "./AI/AIChat";
+import Cursor from "./Cursor/Cursor";
 
 const Provider = ({children}:{children: React.ReactNode}) => {
 
@@ -42,6 +43,8 @@ const Provider = ({children}:{children: React.ReactNode}) => {
         )}
 
         {children}
+
+        {/* <Cursor/> */}
 
         <OverFuckingLays/>
       </div>

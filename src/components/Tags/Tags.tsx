@@ -37,7 +37,7 @@ const Tags = () => {
               strokeLinecap="round"
               strokeDasharray={4200}
               style={{ strokeDashoffset }}
-              className={"stroke-[#F5F3EE] dark:stroke-[#141414]"}
+              className={"stroke-[#F5F3EEd7] dark:stroke-[#141414]"}
             >
 
             </motion.path>

@@ -8,39 +8,34 @@ const Featured = () => {
     <div className="w-full pt-[80px] px-[120px]">
       <div className="w-full flex flex-col pb-[50px] px-0.5">
 
-        {/* <p className="text-[10px] tracking-[0.05em] text-[#F1B347] font-SatoshiBold leading-none">
-           ACADEMY •
-        </p> */}
         <AnimatedText id="FEATURED_TAG" text="ACADEMY •" custom="text-[10px] tracking-[0.05em] text-[#F2B347] font-SatoshiBold" type={4}/>
         
         <div className="w-full flex items-end justify-between mt-5">
+          {/* <p className="text-[#414141] dark:text-[#E9E6DE] text-[40px] font-SatoshiBlack leading-[1.1] pb-[5px]">
+            Start Learning
+            <br />
+            — Online Today.
+          </p> */}
           <div className="flex flex-col">
-            {/* <p className="text-[#414141] dark:text-[#E9E6DE] text-[40px] font-SatoshiBlack leading-[1.2] pb-[5px] overflow-hidden">
-              Start Learning
-              <br />
-              — Online Today.
-            </p> */}
-
-            <AnimatedText id='FEATURED_1' text="Start Learning" custom="text-[#414141] dark:text-[#E9E6DE] text-[40px] font-SatoshiBlack leading-[1.2]" type={1}/>
-            <AnimatedText id='FEATURED_1' text="— Online Today." custom="text-[#414141] dark:text-[#E9E6DE] text-[40px] font-SatoshiBlack leading-[1.2] pb-[5px]" type={1}/>
+            <AnimatedText id='FEATURED_1' text="Start Learning" custom="text-[#414141] dark:text-[#E9E6DE] text-[40px] font-SatoshiBlack leading-[1.2] pb-[5px] z-20" type={1}/>
+            <AnimatedText id='FEATURED_1' text="— Online Today." custom="text-[#414141] dark:text-[#E9E6DE] text-[40px] font-SatoshiBlack leading-[1] pb-[6px] z-10" type={1}/>
           </div>
 
-          <div className="w-[50%] flex items-center justify-start gap-x-[200px]">
-            <div className="flex items-start justify-start flex-col group">
-              <p className="text-[18px] font-HovesDemi text-[#414141] dark:text-[#E9E6DE] leading-[1.2] border-l-[4px] border-[#E9E6DE] dark:border-[#414141] group-hover:border-[#F2B347] pl-[16px]">95%</p>
+          <div className="w-[50%] flex items-center justify-start gap-x-[200px] pb-[6px]">
+            <div className="flex items-start justify-start flex-col group cursor-default">
+              <p className="text-[18px] font-HovesDemi text-[#414141] dark:text-[#E9E6DE] leading-[1.2] border-l-[4px] border-[#E9E6DE] dark:border-[#414141] group-hover:border-[#F2B347] transition-colors duration-300 pl-[16px]">95%</p>
               <p className="syne text-[#787777] dark:text-[#E9E6DE] text-sm leading-none mt-2 pl-[20px]">- - -</p>
             </div>
-            <div className="flex items-start justify-start flex-col group">
-              <p className="text-[18px] font-HovesDemi text-[#414141] dark:text-[#E9E6DE] leading-[1.2] border-l-[4px] border-[#E9E6DE] dark:border-[#414141] group-hover:border-[#F2B347] pl-[16px]">88%</p>
+            <div className="flex items-start justify-start flex-col group cursor-default">
+              <p className="text-[18px] font-HovesDemi text-[#414141] dark:text-[#E9E6DE] leading-[1.2] border-l-[4px] border-[#E9E6DE] dark:border-[#414141] group-hover:border-[#F2B347] transition-colors duration-300 pl-[16px]">88%</p>
               <p className="syne text-[#787777] dark:text-[#E9E6DE] text-sm leading-none mt-2 pl-[20px]">- - -</p>
             </div>
-            <div className="flex items-start justify-start flex-col group">
-              <p className="text-[18px] font-HovesDemi text-[#414141] dark:text-[#E9E6DE] leading-[1.2] border-l-[4px] border-[#E9E6DE] dark:border-[#414141] group-hover:border-[#F2B347] pl-[16px]">99%</p>
+            <div className="flex items-start justify-start flex-col group cursor-default">
+              <p className="text-[18px] font-HovesDemi text-[#414141] dark:text-[#E9E6DE] leading-[1.2] border-l-[4px] border-[#E9E6DE] dark:border-[#414141] group-hover:border-[#F2B347] transition-colors duration-300 pl-[16px]">99%</p>
               <p className="syne text-[#787777] dark:text-[#E9E6DE] text-sm leading-none mt-2 pl-[20px]">- - -</p>
             </div>
           </div>
         </div>
-        {/* <p className="text-[10px] text-[#787777] font-SatoshiBold leading-none tracking-[0.05em] uppercase pr-3">~ Train with tools used by the best.</p> */}
       </div>
   
       <div className="w-full flex gap-x-5">

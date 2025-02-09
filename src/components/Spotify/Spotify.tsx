@@ -26,7 +26,7 @@ const Spotify = () => {
     <div 
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
-      className="fixed bottom-[16px] left-[16px] h-[30px] bg-[#F2B347] rounded-full flex items-center justify-start z-50 group"
+      className="fixed bottom-[16px] left-[16px] h-[30px] bg-[#F2B347] rounded-full flex items-center justify-start z-50 group opacity-0"
     >
       <div className="w-[30px] h-full myFlex p-[5px]">
         <img src="/images/spotify.svg" alt="_" className="w-full h-auto"/>

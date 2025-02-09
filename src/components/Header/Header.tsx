@@ -67,10 +67,10 @@ const Header = () => {
       {/* Actions */}
       <div className="w-fit flex gap-x-2.5">
         {/* Music */}
-        <Music/>
+        {/* <Music/> */}
         
 
-        <MenuButton/>
+        {/* <MenuButton/> */}
       </div>
 
       <AnimatePresence mode="wait">
